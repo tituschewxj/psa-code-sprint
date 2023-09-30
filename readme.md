@@ -11,11 +11,9 @@
 
 
 ---
-## Set up
+### Set up environment
 
-Install [Python](https://www.python.org/) if not installed. Using the latest version of Python is recommended. 
-
-Using [Anaconda](https://www.anaconda.com/) to manage the environment is recommended. Use the `environment.yml` file to set up the conda environment.
+Installing [Anaconda](https://www.anaconda.com/) to manage the environment is recommended. Use the `environment.yml` file to set up the conda environment.
 
 To recreate the environment
 ```
@@ -33,3 +31,10 @@ conda activate psa-code-sprint-env
 ```
 
 Your local environment should be set up.
+
+### Set up app
+
+Run the app, go to the port specified in the terminal output to view the app.
+```
+python src\app.py
+```
