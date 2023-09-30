@@ -1,4 +1,4 @@
-name: c:\Users\titus\Code\psa-code-sprint\.conda
+name: psa-code-sprint-env
 channels:
   - defaults
 dependencies:
@@ -125,4 +125,3 @@ dependencies:
       - websockets==11.0.3
       - werkzeug==2.2.3
       - widgetsnbextension==4.0.9
-prefix: c:\Users\titus\Code\psa-code-sprint\.conda

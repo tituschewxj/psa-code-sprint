@@ -22,9 +22,14 @@ To recreate the environment
 conda env create -f environment.yml
 ```
 
-Active the environment with
+Activate the environment with
 ```
 conda activate my_env
+```
+
+Switch to the new environment 
+```
+conda activate psa-code-sprint-env
 ```
 
 Your local environment should be set up.
