@@ -34,7 +34,7 @@ Your local environment should be set up.
 
 ### Set up app
 
-Run the app, go to the port specified in the terminal output to view the app.
+Run the app, and open it in your browser.
 ```
 python src\app.py
 ```
