@@ -13,6 +13,18 @@
 ---
 ## Set up
 
-Install Python if not installed. Using the latest version of Python is recommended. Using Anaconda to manage the environment is recommended.
+Install [Python](https://www.python.org/) if not installed. Using the latest version of Python is recommended. 
 
-Refer to `spec-file.txt` for the list of dependencies that needs to be in the conda environment.
+Using [Anaconda](https://www.anaconda.com/) to manage the environment is recommended. Use the `environment.yml` file to set up the conda environment.
+
+To recreate the environment
+```
+conda env create -f environment.yml
+```
+
+Active the environment with
+```
+conda activate my_env
+```
+
+Your local environment should be set up.
