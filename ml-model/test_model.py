@@ -8,6 +8,7 @@ import schedules
 Agent based modelling to simulate a port.
 """
 import constants 
+from schedules import ShipSchedules
 
 class ShipAgent(mesa.Agent):
     def __init__(self, unique_id, model, agent_store, cargo_unload_amount: int, cargo_load_amount: int, max_cargo_capacity: int):
@@ -183,6 +184,7 @@ class PortModel(mesa.Model):
         self.agent_count = 0
         for _ in range(self.ship_agents):
             # link agents according to model
+            next_ship = 
             a = ShipAgent(self.agent_count, self, self.agent_store)
             self.agent_store.add_ship_agent(a)
             self.agent_count += 1
