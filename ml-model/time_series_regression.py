@@ -1,0 +1,4 @@
+"""
+Time series regression model
+"""
+
