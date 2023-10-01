@@ -1,13 +1,31 @@
 # PSA Code Sprint 2023
 
+Problem Theme 1: Towards a highly resilient Port Ecosystem
+
+Demand-supply management within the container port ecosystem is crucial for its efficiency. Firstly, forecasting demand is essential, considering factors like shipping schedules, trade fluctuations, and seasonal variations. Secondly, managing the supply of available berths and terminal facilities is vital to handle incoming vessels and cargo. Thirdly, optimizing the allocation of resources, such as cranes and handling equipment, ensures smooth operations. Effective demand-supply management helps reduce congestion, minimize vessel waiting times, maximize asset utilization and enhance the overall throughput of the port. Striking the right balance between supply and demand is pivotal in maintaining the productivity and competitiveness of container ports.
+​
+How can digital solutions powered by data and AI optimize demand and supply to increase resilience of the port amidst global disruptions and risks?
+
 ---
-## About
+## Our Solution: PortSimulAtor
+An AI-powered simulation software that empowers PSA to forecast the impact of trade fluctuations, seasonal variations and external disruptions on the usage of port resources such as supply-chain logistics and power consumption to build a more resilient, future-proof and sustainable port.
 
+We utilized Dash to create a dynamic dashboard to run port simulations.
+- Users can adjust parameters to introduce trade disruptions into the simulation. Some examples:
+  - Weather: Temperature Humidity
+  - Trade factors: Global economic growth
+- The dashboard reacts in real-time based on the chosen parameters of user’s simulation
+- Users can then initiate a comprehensive AI-powered Port Simulator that factors in all the adjusted parameters to provide a detailed forecast of the utilization of the port’s resources such as distribution logistics and energy consumption.
 
+Agent-Based Modelling (ABM)
+- Different elements of a port (ships, cranes, AGV vehicles, storage units, charging stations) are modelled as different agents of ABM
+- Simulations consisting of multiple agents are run to analyse the interactions between different agents based on the introduced disruption
+- A set of complex pseudo-deterministic instructions are set to model realistic behaviours of port agents and their interactions with other agents of the port
+- User can introduce disruptions into the simulation (e.g., natural disasters, trade fluctuations)
 
----
-## Pipeline
-
+Gated Recurrent Unit (GRU), Recurrent Neural Network
+- GRU captures short and long term trends to make predictions.
+- Large sets of historical data are used to train a GRU model to forecast the demand port resources based on selected disruptions
 
 
 ---
@@ -38,3 +56,4 @@ Run the app, and open it in your browser.
 ```
 python src\app.py
 ```
+
