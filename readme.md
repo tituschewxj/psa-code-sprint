@@ -10,6 +10,10 @@ How can digital solutions powered by data and AI optimize demand and supply to i
 ## Our Solution: PortSimulAtor
 An AI-powered simulation software that empowers PSA to forecast the impact of trade fluctuations, seasonal variations and external disruptions on the usage of port resources such as supply-chain logistics and power consumption to build a more resilient, future-proof and sustainable port.
 
+- PSA Singapore is a major global port operator with an extensive network of maritime interconnections.
+- Given the volatile nature of the maritime industry and the increasing frequency of trade disruptions such as pandemics, weather disruptions, global economic factors, PSA is expected to experience greater trade fluctuations that may pose a threat to its currently thriving status in Singapore
+- Hence, it is imperative that PSA remains future-oriented by forecasting the impacts of potential trade disruptions, in order to stay one step ahead and to prepare for such disruptions, in terms of smart logistics management and sustainable operation.
+
 ![](./images/full-view.png)
 
 ![](./images/dashboard-options.png)
