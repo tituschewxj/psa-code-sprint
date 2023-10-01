@@ -10,6 +10,12 @@ How can digital solutions powered by data and AI optimize demand and supply to i
 ## Our Solution: PortSimulAtor
 An AI-powered simulation software that empowers PSA to forecast the impact of trade fluctuations, seasonal variations and external disruptions on the usage of port resources such as supply-chain logistics and power consumption to build a more resilient, future-proof and sustainable port.
 
+![](./images/full-view.png)
+
+![](./images/dashboard-options.png)
+
+![](./images/3d-view.png)
+
 We utilized Dash to create a dynamic dashboard to run port simulations.
 - Users can adjust parameters to introduce trade disruptions into the simulation. Some examples:
   - Weather: Temperature Humidity
@@ -27,6 +33,10 @@ Gated Recurrent Unit (GRU), Recurrent Neural Network
 - GRU captures short and long term trends to make predictions.
 - Large sets of historical data are used to train a GRU model to forecast the demand port resources based on selected disruptions
 
+###  Future Plans
+
+- Enhance the reliability of the model via providing more data sets and refining the mathematical model that structures the simulation
+- Introduce more agents and expand the network of connections to be more inclusive of other port elements involved in PSA’s operations, thus leading  more realistic port simulations
 
 ---
 ### Set up environment
@@ -57,3 +67,7 @@ Run the app, and open it in your browser.
 python src\app.py
 ```
 
+---
+### Remarks
+
+This is still a prototype that is semi-functional, our machine learning models have not been integrated into our app.
