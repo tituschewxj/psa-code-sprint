@@ -8,6 +8,8 @@ How can digital solutions powered by data and AI optimize demand and supply to i
 
 ---
 ## Our Solution: PortSimulAtor
+Link to our youtube video: https://www.youtube.com/watch?v=gXX4y-lyJvY
+
 An AI-powered simulation software that empowers PSA to forecast the impact of trade fluctuations, seasonal variations and external disruptions on the usage of port resources such as supply-chain logistics and power consumption to build a more resilient, future-proof and sustainable port.
 
 - PSA Singapore is a major global port operator with an extensive network of maritime interconnections.
