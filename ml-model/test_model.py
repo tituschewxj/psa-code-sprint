@@ -7,7 +7,7 @@ import schedules
 """
 Agent based modelling to simulate a port.
 """
-import constants 
+from constants import MAX_SHIPS_AT_BERTH
 from schedules import ShipSchedules
 
 class ShipAgent(mesa.Agent):
@@ -44,8 +44,12 @@ class ShipAgent(mesa.Agent):
             if (self.is_unloading_cargo):
                 self.unload_cargo()
         else:
-            # check ship schedule information if should arrive
+            # check ship schedule information if new ship should arrive
             # can only arrive if berth is not full (=> measure inefficiencies)
+
+
+
+
             return
 
 # class BerthAgent(mesa.Agent):
@@ -128,7 +132,7 @@ class AgentStore():
         self.charging_point_agents = set()
         self.storage_agents = set()
 
-    def add_ship_agent(self, ship_agent: ShipAgent):
+    def add_ship_agent(self, ship_agent: ShipAgent):-
         self.ship_agents.add(ship_agent)
 
     # def add_berth_agent(self, berth_agent: BerthAgent):
@@ -171,7 +175,8 @@ class PortModel(mesa.Model):
     """
     Ship/agv/crane agents: max number of ships/agv/crane that the port can support.
     """
-    def __init__(self, ship_agents: int, agv_agents: int, crane_agents: int):
+    # Takes in as parameter a ShipSchedules object (with populated pq) 
+    def __init__(self, ship_agents: int, agv_agents: int, crane_agents: int, ship_schedule: ShipSchedules):
         self.berth_agents = 1
         self.storage_agents = 1
         self.ship_agents = ship_agents
@@ -183,9 +188,12 @@ class PortModel(mesa.Model):
         # Create ShipAgents
         self.agent_count = 0
         for _ in range(self.ship_agents):
-            # link agents according to model
-            next_ship = 
-            a = ShipAgent(self.agent_count, self, self.agent_store)
+
+            # Get next ship via dequeue
+            next_ship = ship_schedule.get_next_ship()
+
+            # Create next ShipAgent
+            a = ShipAgent(self.agent_count, self, self.agent_store, next_ship[1], next_ship[2])
             self.agent_store.add_ship_agent(a)
             self.agent_count += 1
 

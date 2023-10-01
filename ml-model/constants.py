@@ -1,2 +1,2 @@
 # To be initialized by ShipModel's ShipAgents count
-SHIPS_COUNT = 100
+MAX_SHIPS_AT_BERTH = 50
